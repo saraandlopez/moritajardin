@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moritajardin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0%;
+            
+        }
+        h1{
+            margin: 0%;
+            font-size: 2rem;
+           
+        }
+        header {
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+         
+            color:white;
+            background-color: #2a9459;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 1rem;
+            
+        }
+        nav > a:hover {
+            background-color: black;
+            
+    
+        }
+
+        .banner__container {
+            height: 20rem;
+            color: white;
+            background-image: url(https://images.pexels.com/photos/4751996/pexels-photo-4751996.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif
+            
+        
+
+        }
+
+     
+        main {
+            color: black ;
+        }
+
+        .servicios__container {
+            background-color:white;
+            padding: 1rem 2rem; 
+            font-family: Roboto, 'sans-serif';
+            text-align: center;
+            
+        }
+        .card__container {
+            display: flex;
+            gap: 2rem;
+        }
+        .card__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color:lightgray;
+            border-radius: 1%;
+            
+
+        }
+        .boton
+        {
+            background-color: #2a9459;
+            color: azure;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 2%;
+            
+        }
+        .boton:hover{
+            background-color: #0f0e0e;
+        }
+        .iconos {
+            background-color: #2a9459;
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .iconos2 {
+            background-color: #2a9459;
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+       }
+       .icono3{
+            background-color: #2a9459;
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+       }
+       .iconos:hover {
+        background-color: white;
+       }
+       .iconos2:hover {
+        background-color: white;
+       }
+       .icono3:hover {
+        background-color: white;
+       }
+       .contacto {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        font-weight: 200%;
+        background-color:lightgray;
+        
+        
+    }
+        .container__formulario {
+        margin-bottom: 10px; 
+    }
+        .campo {
+        margin-bottom: 10px;
+        
+    }   
+
+        .campo label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color:#2a9459;
+        
+    }
+
+        .campo input[type="text"],
+        .campo input[type="tel"],
+        .campo input[type="email"],
+        .campo textarea {
+        width: calc(100% - 20px);
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        .campo textarea {
+        height: 120px;
+        resize: vertical;
+        }
+        .enviar input[type="submit"] {
+        background-color: #2a9459;
+        color: black;
+        padding: 10px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 800;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+        
+
+        }
+        .enviar input[type="submit"]:hover {
+        background-color:white;
+        }
+        .contacto2 {
+            text-align: center;
+            font-weight: 200;
+        }
+        .legend{
+            text-align: center;
+            color:#2a9459;
+            font-weight: 800;
+        }
+        .container__sombra{
+        -webkit-box-shadow: -1px -4px 17px 24px rgba(109,140,111,1);
+        -moz-box-shadow: -1px -4px 17px 24px rgba(109,140,111,1);
+        box-shadow: -1px -4px 17px 24px rgba(109,140,111,1);
+
+        }
+        .footer__container {
+            background-color: #f0f0f0; 
+            padding: 0rem 0rem; 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            color: #0f0e0e; 
+            font-size: 14px; 
+            position: fixed; 
+            width: 100%;
+            bottom: 0; 
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Moritajardin</h1> 
+        <nav>
+            <a href="inicio">inicio</a>
+            <a href="nosotros">nosotros</a>
+            <a href="contacto">contacto</a>
+        </nav>
+    </header>
+
+    <div class="banner__container">
+        <h2>Terrarios y plantas naturales</h2>
+        <p>Medellin,Colombia
+             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+        </p>
+        <a class="boton" href="">Contactar</a>
+    </div>
+
+    <main class="container__sombra">
+        <div class="servicios__container">
+            <h3>Mis Servicios</h3>
+            <div class="card__container">
+                <div class="card__content">
+                    <h2>Kits de Terrarios</h2>
+                    <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plant" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 15h10v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-4z" />
+                        <path d="M12 9a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+                        <path d="M12 11a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+                        <path d="M12 15l0 -6" />
+                      </svg>
+                    </div>
+                    <p>Ofrecemos una variedad de kits de terrarios que incluyen todo lo necesario para crear un hermoso terrario en casa.
+                        Nuestros kits están diseñados para satisfacer las necesidades de principiantes y expertos por igual, e incluyen:</p>
+                    <ul>
+                        <li>Recipiente adecuado</li>
+                        <li>Sustrato de calidad</li>
+                        <li>Una selección de plantas naturales</li>
+                        <li>Piedras decorativas y otros elementos esenciales</li>
+                    </ul>
+                </div>
+                <div class="card__content">
+                    <h2>Asesoramiento y Consultoria</h2>
+                    <div class="iconos2">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M11 17h-7a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6a2 2 0 1 1 4 0a7 7 0 0 1 4 6" />
+                        <path d="M9 17v1a3 3 0 0 0 2.685 2.984" />
+                        <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M20.2 20.2l1.8 1.8" />
+                     </svg>
+                      </div>
+                    <p>Obtén orientación experta para tus terrarios y plantas naturales:</p>
+                    <ul>
+                        <li>Asesoramiento personalizado.</li>
+                        <li>Recomendaciones sobre plantas y cuidado.</li>
+                        <li>Resolución de problemas.</li>
+                        <li>Consultas en línea disponibles.</li>
+                    </ul>
+                    <p>Contacta con nuestros expertos para obtener ayuda.</p>
+                </div>
+                <div class="card__content">
+                    <h2>Cursos y Talleres</h2>
+                    <div class="icono3">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M10 7h4" />
+                        <path d="M10 18v4l2 -1l2 1v-4" />
+                        <path d="M10 19h-2a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-2" />
+                      </svg>
+                      </svg>
+                    </div>
+                    <p>Descubre todo lo que necesitas saber sobre terrarios y plantas naturales:</p>
+                    <ul>
+                        <li>Participa en nuestros talleres prácticos y cursos especializados.</li>
+                        <li>Aprende a diseñar, construir y mantener tus propios terrarios de forma experta.</li>
+                        <li>Inscríbete ahora para ampliar tus conocimientos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="contacto2"><h2>Contacto</h2> </div>
+        <div class="contacto">
+            <form action="https://formsubmit.co/saraandlopez20@gmail.com" method="POST" />
+            <fieldset>
+                <div class="legend"><legend>Contactanos llenando todos los campos</legend></div>
+                <div class="container__formulario">
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" placeholder="Tu Telefono">
+                </div>
+               
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Tu Email"> 
+                </div>
+           
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" placeholder="Tu Mensaje"></textarea>
+                </div>
+             </div>
+
+                <div class="enviar">
+                <input type="submit" value="Enviar">
+            </div>
+            </fieldset>
+             <input type="hidden" name="_netx" value="http://127.0.0.1:5500/Untitled-1.html">
+             <input type="hidden" name="captcha" value="false">
+            </form>
+        </div>
+
+    </fieldset>
+
+    </fieldset>
+    </section>
+    <footer>
+    <div class="footer__container">
+    <p>Todos los derechos reservados sara lopez</p>
+    </footer>
+</div>
+</body>
